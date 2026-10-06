@@ -26,10 +26,21 @@
 #     elif direction == "right":
 #         print("I am moving to the right!")
 
-num = int(input("Please enter a whole number: "))
+# num = int(input("Please enter a whole number: "))
 
-# work out if code is odd or even
-if num % 2 == 0:
-    print(f"{num} is an even number.")
-else:
-    print(f"{num} is an odd number.")
+# # work out if code is odd or even
+# if num % 2 == 0:
+#     print(f"{num} is an even number.")
+# else:
+#     print(f"{num} is an odd number.")
+
+while True:
+    num_1 = int(input("Please enter the first number: "))
+    num_2 = int(input("Please enter the second number: "))
+
+    if num_1 < num_2:
+        print("\nThe first number is the smallest!")
+    elif num_1 > num_2:
+        print("\nThe second number is the smallest!")
+    elif num_1 == num_2:
+        print("\nBoth are equal!")
