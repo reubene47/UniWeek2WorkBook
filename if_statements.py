@@ -34,13 +34,24 @@
 # else:
 #     print(f"{num} is an odd number.")
 
-while True:
-    num_1 = int(input("Please enter the first number: "))
-    num_2 = int(input("Please enter the second number: "))
+# while True:
+#     num_1 = int(input("Please enter the first number: "))
+#     num_2 = int(input("Please enter the second number: "))
 
-    if num_1 < num_2:
-        print("\nThe first number is the smallest!")
-    elif num_1 > num_2:
-        print("\nThe second number is the smallest!")
-    elif num_1 == num_2:
-        print("\nBoth are equal!")
+#     if num_1 < num_2:
+#         print("\nThe first number is the smallest!")
+#     elif num_1 > num_2:
+#         print("\nThe second number is the smallest!")
+#     elif num_1 == num_2:
+#         print("\nBoth are equal!")
+
+num_even = 0
+
+for position in ("first", "second", "third"):
+    number = int(input(f"Please enter the {position} whole number: "))
+    if number % 2 == 0:
+        num_even += 1
+
+num_odd = 3 - num_even
+
+print(f"There were {num_even} even and {num_odd} odd numbers")
