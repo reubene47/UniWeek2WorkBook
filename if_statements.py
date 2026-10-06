@@ -1,6 +1,16 @@
-book = input("Enter type of book: ").upper()
+# book = input("Enter type of book: ").lower()
 
-if book == "ADVENTURE":
-    print("I like adventure books!")
+# if book == "adventure":
+#     print("I like adventure books!")
+# else:
+#     print("Finished reading book.")
+
+activity = input("Please enter the activity to be performed: ").lower()
+
+if activity == "calculate":
+    print("Performing calculations...")
 else:
-    print("Finished reading book!")
+    print("Performing activity...")
+
+print("Activity completed!")
+
